@@ -1,6 +1,6 @@
 .cards-class{
     margin-top: 15px;
-    background-color: silver;
+    background-color: rgb(247, 240, 240);
     }
     
     .text{
@@ -39,7 +39,8 @@
         text-decoration: none;
         padding: 10px;
         border: 2px solid rgb(7, 7, 189);
-        color:white;
-        background-color: rgb(7, 7, 189);
+        border-radius: 12px;
+        color:black;
+        
     
     }
