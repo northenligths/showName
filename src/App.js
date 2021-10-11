@@ -3,6 +3,7 @@ import {BrowserRouter as Router,Route,Switch} from "react-router-dom";
 import SummaryOne from "./pages/summaryOne/SummaryOne";
 import SummaryTwo from "./pages/summaryTwo/SummaryTwo";
 import SummaryThree from "./pages/summaryThree/SummaryThree";
+import SummaryFour from "./pages/summaryFour/SummaryFour";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path="/SummaryOne" component={SummaryOne} />
       <Route path="/SummaryTwo" component={SummaryTwo} />
       <Route path="/SummaryThree" component={SummaryThree} />
+      <Route path="/SummaryFour" component={SummaryFour} />
      </Switch>
     </div>
     </Router>
