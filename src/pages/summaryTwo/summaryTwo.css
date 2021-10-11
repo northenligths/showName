@@ -2,13 +2,13 @@
     text-align: center;
 }
 
-.img-one{
+.img-two{
     margin-top: 15px;
     margin-left: 585px;
 
 }
 
-.sum-one{
+.sum-two{
     margin-top: 20px;
     margin-left: 370px;
     border: solid;
@@ -32,7 +32,7 @@
     
 }
 .sum-link{
-        margin-left: 600px;
+        margin-left: 640px;
     justify-content: center;
         text-decoration: none;
         padding: 10px;
