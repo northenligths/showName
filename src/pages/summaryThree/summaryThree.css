@@ -1,0 +1,43 @@
+.sum,.summary{
+    text-align: center;
+}
+
+.img-three{
+    margin-top: 15px;
+    margin-left: 585px;
+
+}
+
+.sum-three{
+    margin-top: 20px;
+    margin-left: 370px;
+    border: solid;
+    width: 50%;
+    height: auto;
+}
+
+.name,.lang,.rating{
+    margin-left: 290px;
+}
+
+.text{
+    width: 80%;
+    margin-left: 80px;
+}
+
+.link{
+    
+    margin-top: 20px;
+   
+    
+}
+.sum-link{
+        margin-left: 630px;
+    justify-content: center;
+        text-decoration: none;
+        padding: 10px;
+        border: 2px solid rgb(7, 7, 189);
+        border-radius: 12px;
+        color:white;
+        background-color: blue;
+}
