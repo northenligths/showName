@@ -26,13 +26,13 @@ export default function Homepage(props) {
             <Col md={3}> 
       <Card>
          <div className="hover-img">
-        <CardImg className="height-img" id="zoom-in"top width="100%" src="https://static.tvmaze.com/uploads/images/medium_portrait/280/701869.jpg" alt="Card image cap" />
+        <CardImg className="height-img" id="zoom-in"top width="100%" src={shows[0].show.image.medium} alt="Card image cap" />
         
         <CardBody>  
         <CardTitle tag="h5">{shows[0].show.name}</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">Language-{shows[0].show.language}</CardSubtitle>
           <CardText>Rating-Average({shows[0].show.rating.average})</CardText>
-                    <Link className="link-class" to="/summary">View Summary</Link>
+                    <Link className="link-class" to="/SummaryOne">View Summary</Link>
         </CardBody>
         </div>
       </Card>
