@@ -70,8 +70,7 @@ export default function Form({location}) {
           placeholder={movie}
           name="movieName"
         />
-        {/* Uncomment the next line to show the error message */}
-        {/* <span id="last-name-error">Please enter a last name</span> */}
+        
        
         <input
           
@@ -83,8 +82,7 @@ export default function Form({location}) {
         />
 
            
-        {/* Uncomment the next line to show the error message */}
-        {/* <span id="email-error">Please enter an email address</span> */}
+        
         <button class="form-field" type="submit">
           Confirm Show
         </button>
