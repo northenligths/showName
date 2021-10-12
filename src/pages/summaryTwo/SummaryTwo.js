@@ -21,7 +21,7 @@ export default function SummaryTwo() {
             <img src={shows[1].show.image.medium} alt="" />
             </div>
             <div className="link">
-            <Link className="sum-link" to="/">Book Show</Link>
+            <Link className="sum-link" to="/form?q=all american">Book Show</Link>
             </div>
             <div className="sum-two">
              <div className="name"> <strong>Name</strong>-{shows[1].show.name}</div>

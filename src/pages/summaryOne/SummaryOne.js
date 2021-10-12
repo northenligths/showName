@@ -21,7 +21,7 @@ export default function SummaryOne() {
             <img src={shows[0].show.image.medium} alt="" />
             </div>
             <div className="link">
-            <Link className="sum-link" to="/">Book Show</Link>
+            <Link className="sum-link" to="/form?q=all rise">Book Show</Link>
             </div>
             <div className="sum-one">
              <div className="name"> <strong>Name</strong>-{shows[0].show.name}</div>

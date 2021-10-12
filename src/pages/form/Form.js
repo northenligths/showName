@@ -1,12 +1,25 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './form.css'
+import History from  '../../components/history/History';
 
-export default function Form() {
+export default function Form({location}) {
     const [values,setValues]=useState({
-          fullName:"",
-          movieName:"",
-          language:""
-    })
+        fullName:'',
+        movieName:"",
+        language:""
+  });
+
+    const [movie,setMovie]=useState('');
+
+    useEffect(()=>{
+        const params=new URLSearchParams(location.search);
+        const q=params.get('q');
+        setMovie(q?q:'Movie Name');
+    },[])
+
+    useEffect(()=>{
+        localStorage.setItem('form',JSON.stringify(values))
+    },[values]);
 
     const [submitted,setSubmitted]=useState(false);
     const [valid,setValid]=useState(false);
@@ -19,21 +32,22 @@ export default function Form() {
         setValues({...values,movieName:event.target.value})
     }
 
-    const handleLanguageChange=(event)=>{
-        setValues({...values,language:event.target.value})
-    }
+    
 
     const handleSubmit=(event)=>{
         event.preventDefault();
         if(values.fullName&&values.movieName&&values.language){
             setValid(true);
         }
+        setMovie(values);
+        History.push('/form?q= +values')
         setSubmitted(true);
-        
+
             }
 
     return (
         <div class="form">
+            <h1 className="book">Book Your Show</h1>
             <div class="form-container">
       <form class="register-form" onSubmit={handleSubmit}>
         
@@ -53,19 +67,12 @@ export default function Form() {
           value={values.movieName}
           class="form-field"
           type="text"
-          placeholder="Movie Name"
+          placeholder={movie}
           name="movieName"
         />
         {/* Uncomment the next line to show the error message */}
         {/* <span id="last-name-error">Please enter a last name</span> */}
-        <input
-        onChange={handleLanguageChange}
-          value={values.language}
-          class="form-field"
-          type="text"
-          placeholder="Language"
-          name="language"
-        />
+       
         <input
           
           class="form-field"

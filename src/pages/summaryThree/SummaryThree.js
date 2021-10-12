@@ -21,7 +21,7 @@ export default function SummaryThree() {
             <img src={shows[2].show.image.medium} alt="" />
             </div>
             <div className="link">
-            <Link className="sum-link" to="/">Book Show</Link>
+            <Link className="sum-link" to="/form?q=all night">Book Show</Link>
             </div>
             <div className="sum-three">
              <div className="name"> <strong>Name</strong>-{shows[2].show.name}</div>

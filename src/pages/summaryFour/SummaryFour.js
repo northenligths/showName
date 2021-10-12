@@ -22,7 +22,7 @@ export default function SummaryFour() {
 
             </div>
             <div className="link">
-            <Link className="sum-link" to="/">Book Show</Link>
+            <Link className="sum-link" to="/form?q=all that">Book Show</Link>
             </div>
             <div className="sum-one">
              <div className="name"> <strong>Name</strong>-{shows[3].show.name}</div>
