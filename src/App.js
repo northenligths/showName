@@ -4,6 +4,7 @@ import SummaryOne from "./pages/summaryOne/SummaryOne";
 import SummaryTwo from "./pages/summaryTwo/SummaryTwo";
 import SummaryThree from "./pages/summaryThree/SummaryThree";
 import SummaryFour from "./pages/summaryFour/SummaryFour";
+import Form from "./pages/form/Form";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/SummaryTwo" component={SummaryTwo} />
       <Route path="/SummaryThree" component={SummaryThree} />
       <Route path="/SummaryFour" component={SummaryFour} />
+      <Route path="/Form" component={Form} />
      </Switch>
     </div>
     </Router>

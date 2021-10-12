@@ -19,8 +19,8 @@ export default function Homepage(props) {
     return (
         <div>
             <div className="cards-class">
-        <h1 className="text">TV Maze</h1>
-        <p className="text">Select from your favorite Movies</p>
+        <h1 className="text-home">TV Maze</h1>
+        <p className="text-home">Select from your favorite Movies</p>
         <Container>
         <Row>
             <Col md={3}> 
@@ -32,7 +32,7 @@ export default function Homepage(props) {
         <CardTitle tag="h5">{shows[0].show.name}</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">Language-{shows[0].show.language}</CardSubtitle>
           <CardText>Rating-Average({shows[0].show.rating.average})</CardText>
-                    <Link className="link-class" to="/SummaryOne">View Summary</Link>
+                    <Link className="link-class" to={"/SummaryOne"}>View Summary</Link>
         </CardBody>
         </div>
       </Card>
@@ -44,7 +44,7 @@ export default function Homepage(props) {
         <CardTitle tag="h5">{shows[1].show.name}</CardTitle>
         <CardSubtitle tag="h6" className="mb-2 text-muted">Language-{shows[1].show.language}</CardSubtitle>
           <CardText>Rating-Good({shows[1].show.rating.average})</CardText>
-        <Link className="link-class" to="/summary">View Summary</Link>
+        <Link className="link-class" to="/SummaryTwo">View Summary</Link>
         </CardBody>
       </Card>
       </Col>
@@ -55,7 +55,7 @@ export default function Homepage(props) {
         <CardTitle tag="h5">{shows[2].show.name}</CardTitle>
         <CardSubtitle tag="h6" className="mb-2 text-muted">Language-{shows[2].show.language}</CardSubtitle>
           <CardText>Rating-Good({shows[2].show.rating.average})</CardText>
-        <Link className="link-class" to="/summary">View Summary</Link>
+        <Link className="link-class" to="/SummaryThree">View Summary</Link>
         </CardBody>
       </Card>
       </Col>
@@ -66,7 +66,7 @@ export default function Homepage(props) {
         <CardTitle tag="h5">{shows[3].show.name}</CardTitle>
         <CardSubtitle tag="h6" className="mb-2 text-muted">Language-{shows[3].show.language}</CardSubtitle>
           <CardText>Rating-Average({shows[2].show.rating.average})</CardText>
-        <Link className="link-class" to="/summary">View Summary</Link>
+        <Link className="link-class" to="/SummaryFour">View Summary</Link>
         </CardBody>
       </Card>
       </Col>
